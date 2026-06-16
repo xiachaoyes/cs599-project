@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: xia-image-search-mcp-server
+  profiles:
+    active: sse
+server:
+  port: 8127
+# Pexels API 配置（从环境变量读取，禁止硬编码）
+pexels:
+  api-key: ${PEXELS_API_KEY:}

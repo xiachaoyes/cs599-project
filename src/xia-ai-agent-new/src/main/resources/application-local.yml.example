@@ -1,0 +1,25 @@
+# ==========================================
+# 本地开发配置模板
+# 使用方式：复制此文件为 application-local.yml 并填入真实的 API Key
+#      cp application-local.yml.example application-local.yml
+# 注意：application-local.yml 已在 .gitignore 中排除，不会提交到 Git
+# ==========================================
+
+spring:
+  ai:
+    dashscope:
+      api-key: your_dashscope_api_key_here
+
+# PostgreSQL 数据库（PgVector）
+  datasource:
+    url: jdbc:postgresql://your_db_host:5432/your_db_name
+    username: your_db_username
+    password: your_db_password
+
+# searchAPI
+search-api:
+  api-key: your_search_api_key_here
+
+# Pexels 图片搜索 MCP Server
+pexels:
+  api-key: your_pexels_api_key_here
